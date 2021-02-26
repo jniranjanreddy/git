@@ -2,6 +2,15 @@
 API Calls
 [root@docswarm01 maria-checkout]# curl --header "PRIVATE-TOKEN: a555izJWwzx5DLd8G3Fe" "http://192.168.9.6:8085/api/v4/version"
 {"version":"12.2.5","revision":"09f8edbc29a"}You have new mail in /var/spool/mail/root
+
+[root@docswarm01 ~]# curl -s --header "PRIVATE-TOKEN: a555izJWwzx5DLd8G3Fe" "http://192.168.9.6:8085/api/v4/merge_requests?state=opened" | jq .[].state
+"opened"
+
+
+
+
+
+
 ```
 shortform git commands
 alias g='git'
