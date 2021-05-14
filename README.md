@@ -5,7 +5,14 @@ API Calls
 
 [root@docswarm01 ~]# curl -s --header "PRIVATE-TOKEN: a555izJWwzx5DLd8G3Fe" "http://192.168.9.6:8085/api/v4/merge_requests?state=opened" | jq .[].state
 "opened"
-
+```
+```
+How to update git to 2.x
+git --version
+yum remove git
+sudo yum -y install https://packages.endpoint.com/rhel/7/os/x86_64/endpoint-repo-1.7-1.x86_64.rpm
+yum install git
+```
 
 
 
