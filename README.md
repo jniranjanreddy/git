@@ -1,4 +1,12 @@
 ```
+```
+#append to .bashrc
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] # "
+```
+
 API Calls
 [root@docswarm01 maria-checkout]# curl --header "PRIVATE-TOKEN: a555izJWwzx5DLd8G3Fe" "http://192.168.9.6:8085/api/v4/version"
 {"version":"12.2.5","revision":"09f8edbc29a"}You have new mail in /var/spool/mail/root
