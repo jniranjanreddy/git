@@ -27,6 +27,23 @@ If any specifi version required.
 sudo yum -y install https://packages.endpoint.com/rhel/7/os/x86_64/endpoint-repo-1.7-1.x86_64.rpm or
 sudo yum -y install https://packages.endpoint.com/rhel/7/os/x86_64/endpoint-repo-1.9-1.x86_64.rpm
 yum install git
+
+
+How to merge developement branch to main
+```
+root@sonarqube-9-9:~/sonarqube# git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+root@sonarqube-9-9:~/sonarqube# git merge development
+Updating 0558805..4430085
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+``` 
+
+
+
 ```
 
 
