@@ -1,5 +1,11 @@
 ```
 
+## Compare
+```
+https://github.com/jnx-AI/jnx-ui/compare/release-51...feature/JI-1089
+
+```
+
 
 ## Submodule - https://www.youtube.com/watch?v=RgIAXF53a8U&list=PL_RrEj88onS-jN7dZb-tYz0cpsxuA23Cm
 #append to .bashrc
